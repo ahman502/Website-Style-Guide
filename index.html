@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <title>Website Style Guide</title>
+    </head>
+    
+    <body>
+
+        <!-- header of the page -->
+        <header>
+            <nav id="nav-bar"> 
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#colors">Colors</a></li>
+                    <li><a href="#fonts">Fonts</a></li>
+                    <li><a href="#text-styles">Text Styles</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- div for the whole page -->
+        <div id="welcome-message">
+            <div id ="wm-contents"> 
+                <h2>Welcome</h2>
+                <h1>Website Style Guide</h1>
+                <p>A basic CSS (Cascading Style Sheets) design system to help build more 
+                    websites in the future! Scroll down to view a collection of some basic 
+                    colors with their hex and rgb codes, fonts and their usage with examples, 
+                    and some basic text styling using CSS</p>
+            </div> 
+        </div>
+        
+        <!-- second div for the whole page -->
+        <div id="colors">
+            <h2>Basic CSS Colors</h2>
+            <p id="colors-description">Colors bring life to a website. In CSS colors are specified using predefined 
+                color names, or RGB, HEX, HSL, RGBA, HSLA values. For this guide, I have only 
+                used color names, their hex codes and corresponding rgb values</p>
+            
+            <!-- colors -->
+            <div class="color-boxes"> 
+                
+                <div id="black-color-box">
+                    <p>Black </p>
+                    <p>Hexadeciaml code: #000000 </p>
+                    <p>rgb(0,0,0)</p>
+                </div>
+
+                <div id="gray-color-box">
+                    <p> Gray </p>
+                    <p> Hexadeciaml code: #808080 </p>
+                    <p>rgb(128,128,128)</p>
+                </div>
+
+                <div id="silver-color-box">
+                    <p> Silver </p>
+                    <p> Hexadeciaml code: #C0C0C0 </p>
+                    <p>rgb(192,192,192)</p>
+                </div>
+
+                <div id="maroon-color-box">
+                    <p> Maroon</p>
+                    <p>Hexadeciaml code: #800000</p>
+                    <p>rgb(128,0,0)</p>
+                </div>
+
+                <div id="red-color-box">
+                    <p>Red </p>
+                    <p>Hexadeciaml code: #000000 </p>
+                    <p>rgb(0,0,0)</p>
+                </div>
+
+                <div id="purple-color-box">
+                    <p>Purple</p>
+                    <p>Hexadeciaml code: #800080</p>
+                    <p>rgb(128,0,128)</p>
+                </div>
+
+                <div id="fuchsia-color-box">
+                    <p>Fuchsia</p>
+                    <p>Hexadeciaml code: #FF00FF</p>
+                    <p>rgb(255,0,255)</p>
+                </div>
+
+                <div id="green-color-box">
+                    <p>Green</p>
+                    <p>Hexadeciaml code: #008000</p>
+                    <p>rgb(0,128,0)</p>
+                </div>
+
+                <div id="lime-color-box">
+                    <p>Lime</p>
+                    <p>Hexadeciaml code: #00FF00</p>
+                    <p>rgb(0,255,0)</p>
+                </div>
+
+                <div id="olive-color-box">
+                    <p>Olive</p>
+                    <p>Hexadeciaml code: #808000</p>
+                    <p>rgb(128,128,0)</p>
+                </div>
+
+                <div id="yellow-color-box">
+                    <p>Yellow</p>
+                    <p>Hexadeciaml code: #FFFF00</p>
+                    <p>rgb(255,255,0)</p>
+                </div>
+
+                <div id="navy-color-box">
+                    <p>Navy</p>
+                    <p>Hexadeciaml code: #000080</p>
+                    <p>rgb(0,0,128)</p>
+                </div>
+
+                <div id="blue-color-box">
+                    <p>Blue</p>
+                    <p>Hexadeciaml code: #0000FF</p>
+                    <p>rgb(0,0,255)</p>
+                </div>
+
+                <div id="teal-color-box">
+                    <p>Teal</p>
+                    <p>Hexadeciaml code: #008080</p>
+                    <p>rgb(0,128,128)</p>
+                </div>
+
+                <div id="aqua-color-box">
+                    <p>Aqua</p>
+                    <p>Hexadeciaml code: #00FFFF</p>
+                    <p>rgb(0,255,255)</p>
+                </div>
+
+            </div>
+            <p id="more-colors-link">Visit <a href="https://www.w3.org/wiki/CSS/Properties/color/keywords#Basic_Colors">W3.org</a> for more variety of CSS colors</p>
+
+        </div> 
+
+        <!-- third div for the whole page -->
+        <div id="fonts">
+            <h2>Web Safe Fonts</h2>
+            <p>Web safe fonts are fonts that are included with most operating systems, 
+                the implication of such high availability is that a designer can expect 
+                typography involving web safe fonts to appear exactly as intended to most users. 
+                Below are non-exhaustive lists of some fonts that are considered web safe. </p>
+            
+            <!-- 1 -->
+            <table class="fonts-tables"> 
+                <tr>
+                    <td class="first-table-col">Font Name</td>
+                    <td class="second-table-col">Arial (sans-serif)</td>
+                </tr>
+                <tr>
+                    <td class="first-table-col">Font Usage</td>
+                    <td class="second-table-col">Arial is the most widely used font for both online and printed media. Arial is also the default font in Google Docs. Arial is one of the safest web fonts, and it is available on all major operating systems.</td>
+                </tr>
+                <tr> 
+                    <td class="first-table-col">Example</td>
+                    <td class="second-table-col" id="arial">Lorem ipsum dolor sit amet</td>
+                </tr>
+            </table>
+
+            <!-- 2 -->
+            <table class="fonts-tables"> 
+                <tr>
+                    <td class="first-table-col">Font Name</td>
+                    <td class="second-table-col">Verdana (sans-serif)</td>
+                </tr>
+                <tr>
+                    <td class="first-table-col">Font Usage</td>
+                    <td class="second-table-col">Verdana is a very popular font. Verdana is easily readable even for small font sizes.</td>
+                </tr>
+                <tr> 
+                    <td class="first-table-col">Example</td>
+                    <td class="second-table-col" id="verdana">Lorem ipsum dolor sit amet</td>
+                </tr>
+            </table>
+
+            <!-- 3 -->
+            <table class="fonts-tables"> 
+                <tr>
+                    <td class="first-table-col">Font Name</td>
+                    <td class="second-table-col">Helvetica (sans-serif)</td>
+                </tr>
+                <tr>
+                    <td class="first-table-col">Font Usage</td>
+                    <td class="second-table-col">The Helvetica font is loved by designers. It is suitable for many types of business.</td>
+                </tr>
+                <tr> 
+                    <td class="first-table-col">Example</td>
+                    <td class="second-table-col" id="helvetica">Lorem ipsum dolor sit amet</td>
+                </tr>
+            </table>
+
+            <!-- 4 -->
+            <table class="fonts-tables"> 
+                <tr>
+                    <td class="first-table-col">Font Name</td>
+                    <td class="second-table-col">Tahoma (sans-serif)</td>
+                </tr>
+                <tr>
+                    <td class="first-table-col">Font Usage</td>
+                    <td class="second-table-col">The Tahoma font has less space between the characters.</td>
+                </tr>
+                <tr> 
+                    <td class="first-table-col">Example</td>
+                    <td class="second-table-col" id="tahoma">Lorem ipsum dolor sit amet</td>
+                </tr>
+            </table>
+
+            <!-- 5 -->
+            <table class="fonts-tables"> 
+                <tr>
+                    <td class="first-table-col">Font Name</td>
+                    <td class="second-table-col">Trebuchet MS (sans-serif)</td>
+                </tr>
+                <tr>
+                    <td class="first-table-col">Font Usage</td>
+                    <td class="second-table-col">Trebuchet MS was designed by Microsoft in 1996. Use this font carefully. Not supported by all mobile operating systems.</td>
+                </tr>
+                <tr> 
+                    <td class="first-table-col">Example</td>
+                    <td class="second-table-col" id="trebuchet">Lorem ipsum dolor sit amet</td>
+                </tr>
+            </table>
+
+            <!-- 6 -->
+            <table class="fonts-tables"> 
+                <tr>
+                    <td class="first-table-col">Font Name</td>
+                    <td class="second-table-col">Times New Roman (serif)</td>
+                </tr>
+                <tr>
+                    <td class="first-table-col">Font Usage</td>
+                    <td class="second-table-col">Times New Roman is one of the most recognizable fonts in the world. It looks professional and is used in many newspapers and "news" websites. It is also the primary font for Windows devices and applications.</td>
+                </tr>
+                <tr> 
+                    <td class="first-table-col">Example</td>
+                    <td class="second-table-col" id="timesNewRoman">Lorem ipsum dolor sit amet</td>
+                </tr>
+            </table>
+
+            <!-- 7 -->
+            <table class="fonts-tables"> 
+                <tr>
+                    <td class="first-table-col">Font Name</td>
+                    <td class="second-table-col">Georgia (serif)</td>
+                </tr>
+                <tr>
+                    <td class="first-table-col">Font Usage</td>
+                    <td class="second-table-col">Georgia is an elegant serif font. It is very readable at different font sizes, so it is a good candidate for mobile-responsive design.</td>
+                </tr>
+                <tr> 
+                    <td class="first-table-col">Example</td>
+                    <td class="second-table-col" id="georgia">Lorem ipsum dolor sit amet</td>
+                </tr>
+            </table>
+
+            <!-- 8 -->
+            <table class="fonts-tables"> 
+                <tr>
+                    <td class="first-table-col">Font Name</td>
+                    <td class="second-table-col">Garamond (serif)</td>
+                </tr>
+                <tr>
+                    <td class="first-table-col">Font Usage</td>
+                    <td class="second-table-col">Garamond is a classical font used for many printed books. It has a timeless look and good readability.</td>
+                </tr>
+                <tr> 
+                    <td class="first-table-col">Example</td>
+                    <td class="second-table-col" id="garamond">Lorem ipsum dolor sit amet</td>
+                </tr>
+            </table>
+
+            <!-- 9 -->
+            <table class="fonts-tables"> 
+                <tr>
+                    <td class="first-table-col">Font Name</td>
+                    <td class="second-table-col">Courier New (monospace)</td>
+                </tr>
+                <tr>
+                    <td class="first-table-col">Font Usage</td>
+                    <td class="second-table-col">Courier New is the most widely used monospace serif font. Courier New is often used with coding displays, and many email providers use it as their default font. Courier New is also the standard font for movie screenplays.</td>
+                </tr>
+                <tr> 
+                    <td class="first-table-col">Example</td>
+                    <td class="second-table-col" id="courierNew">Lorem ipsum dolor sit amet</td>
+                </tr>
+            </table>
+
+            <!-- 10 -->
+            <table class="fonts-tables"> 
+                <tr>
+                    <td class="first-table-col">Font Name</td>
+                    <td class="second-table-col">Brush Script MT (cursive)</td>
+                </tr>
+                <tr>
+                    <td class="first-table-col">Font Usage</td>
+                    <td class="second-table-col">The Brush Script MT font was designed to mimic handwriting. It is elegant and sophisticated, but can be hard to read. Use it carefully.</td>
+                </tr>
+                <tr> 
+                    <td class="first-table-col">Example</td>
+                    <td class="second-table-col" id="brushScript">Lorem ipsum dolor sit amet</td>
+                </tr>
+            </table>
+
+            <p id="more-fonts-link">Visit <a href="https://www.w3.org/Style/Examples/007/fonts.en.html">W3.org</a> to check out more CSS fonts</p>
+
+        </div>
+
+        <!-- fourth div for the whole page -->
+        <div id="text-styles">
+            <h2>Text Styling in CSS</h2>
+            <p id="text-styles-description">One of the most common uses for CSS is to style text. 
+                Most webpages include text, after all, and changing the look of it can go a long 
+                way toward giving a webpage a more unique appearance. Without changing the HTML 
+                underneath, CSS can be used to alter the size of text, the font, the boldness, 
+                the alignment within a paragraph, and more. </p>
+            
+            <!-- size info -->
+            <h3>~ Size ~</h3>
+            <p>The font-size property in CSS is used to specify the height and size of the font. 
+                It affects the size of the text of an element. Its default value is medium and can 
+                be applied to every element. The values of this property include xx-small, small, 
+                x-small, etc.<br><br>Font-size is commonly declared in <span>pixel values (px)</span> to achieve 
+                pixel accuracy. This is an OS-independent and cross-browser way of literally telling 
+                the browsers to render the letters at exactly the number of pixels in height that you 
+                specified. </p>
+            
+            <h5>Size Syntax</h5>
+            <code>elementName { 
+                    font-size: medium|large|x-large|xx-large|xx-small|x-small|small; 
+                }</code>
+
+            <p>or</p>
+            
+            <code>elementName { 
+                    font-size: 18px; 
+                }</code>
+
+            <!-- font size info -->
+            <h3>~ Font ~</h3>
+            <p>One of the simplest ways to make a major change to the look of the text on a webpage is 
+                to change the font. When no font is specified, most browsers display text in the Times 
+                New Roman font. <br><br>The <span>font-family</span> CSS property specifies a prioritized list of one or 
+                more font family names. Values are separated by commas to indicate that they are 
+                alternatives. The browser will select the first font in the list that is installed or 
+                that can be downloaded.</p>
+            
+            <h5>Font Syntax</h5>
+            <code>elementName { 
+                     font-family: 'font name', 'fall back font name';
+                }</code>
+            
+            <p>or</p>
+
+            <code>elementName { 
+                     font-family: 'Courier New', Courier, monospace;
+                }</code>
+
+            <!-- font-weight info -->
+            <h3>~ Font Weight ~</h3>
+            <p>The font-weight CSS property sets the weight (or boldness) of the font. 
+                The weights available depend on the font-family that is currently set.<br><br>Some commonly 
+                used font-weight values are <span>normal (Same as 400)</span>, <span>bold (Same as 700)</span>, 
+                <span>lighter</span> which is one relative font weight lighter than the parent element, 
+                <span>bolder</span> which is one relative font weight bolder than the parent element, and 
+                <span>&lt;number&gt;</span> which takes a value between 1 and 1000, inclusive. Higher 
+                numbers represent weights that are bolder than (or as bold as) lower numbers.</p>
+                
+            <h5>Font Weight Syntax</h5>
+            <code>elementName { 
+                    font-weight: Keyword or Numeric value;
+                }</code>
+                
+            <p>or</p>
+    
+            <code>elementName { 
+                font-weight: bold;
+                }</code>
+
+            <p>or</p>
+    
+            <code>elementName { 
+                font-weight: 700;
+                }</code>
+        
+            <!-- font size info -->
+            <h3>~ Text Alignment ~</h3>
+            <p>The text-align CSS property sets the horizontal alignment of the content inside a 
+                block element or table-cell box. This means it works like vertical-align but in the 
+                horizontal direction.<br><br>The text-align property is commonly specified using the 
+                keyword values like <span>start, end, left, right, center, justify, </span> 
+                or <span>justify-all.</span> <br><br>
+                <ul id="text-alg-list">
+                    <li><span>start:</span> The same as left if direction is left-to-right and right if direction is right-to-left.</li>
+                    <li><span>end:</span> The same as right if direction is left-to-right and left if direction is right-to-left.</li>
+                    <li><span>left:</span> The inline contents are aligned to the left edge of the line box.</li>
+                    <li><span>right:</span> The inline contents are aligned to the right edge of the line box.</li>
+                    <li><span>center:</span> The inline contents are centered within the line box.</li>
+                    <li><span>justify:</span> The inline contents are justified. Text should be spaced to line up its left and right edges to the left and right edges of the line box, except for the last line.</li>
+                    <li><span>justify-all:</span> Same as justify, but also forces the last line to be justified.</li>
+                </ul>
+            </p>
+            
+            <h5>Text Alignment Syntax</h5>
+            <code>elementName { 
+                    text-align: keyword value;
+                }</code>
+            
+            <p>or</p>
+
+            <code>elementName { 
+                    text-align: left;
+                }</code>
+
+            <p id="more-text-styles-link">Visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">MDN Web Docs.</a> to learn more about text styling using CSS</p>
+
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <!-- Site Footer Nav -->
+            <nav>
+              <ul>
+                <li>To view more of my projects, check out my<a href="https://github.com/ahman502">GitHub</a></li>
+                <li>Copyright &copy; 2022. Natalia Ahmad. All Rights Reserved.</li>
+              </ul>
+            </nav>
+          </footer>
+        
+    </body>
+
+</html>
